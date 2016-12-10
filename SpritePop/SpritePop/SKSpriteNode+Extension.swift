@@ -12,9 +12,9 @@ public extension SKSpriteNode {
     
     // MARK: - Properties
     
-    public var anchor: R2DAnchorPoint {
+    public var anchor: AnchorPoint {
         get {
-            return R2DAnchorPoint.fromCGPoint(anchorPoint)
+            return AnchorPoint.from(cgPoint: anchorPoint)
         }
         set {
             anchorPoint = newValue.value
@@ -50,8 +50,8 @@ public extension SKSpriteNode {
     }
     
     @discardableResult
-    public func set(anchor: R2DAnchorPoint) -> Self {
-        anchorPoint = anchor.value
+    public func set(anchorPoint: AnchorPoint) -> Self {
+        self.anchorPoint = anchorPoint.value
         return self
     }
     

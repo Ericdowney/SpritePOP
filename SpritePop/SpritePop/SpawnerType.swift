@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum R2DSpawnerType: CGFloat {
+public enum SpawnerType: CGFloat {
     case tan
     case cos
     case sin

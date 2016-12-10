@@ -23,10 +23,10 @@
 		8918C6AC1DFBB2B800A5DBFF /* SKNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6A71DFBB2B800A5DBFF /* SKNode+Extension.swift */; };
 		8918C6AD1DFBB2B800A5DBFF /* SKPhysicsBody+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6A81DFBB2B800A5DBFF /* SKPhysicsBody+Extension.swift */; };
 		8918C6AE1DFBB2B800A5DBFF /* SKSpriteNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6A91DFBB2B800A5DBFF /* SKSpriteNode+Extension.swift */; };
-		8918C6B31DFBB2EA00A5DBFF /* R2DAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6B01DFBB2EA00A5DBFF /* R2DAnchorPoint.swift */; };
-		8918C6B41DFBB2EA00A5DBFF /* R2DDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6B11DFBB2EA00A5DBFF /* R2DDirection.swift */; };
-		8918C6B51DFBB2EA00A5DBFF /* R2DSpawnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6B21DFBB2EA00A5DBFF /* R2DSpawnerType.swift */; };
+		8918C6B41DFBB2EA00A5DBFF /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6B11DFBB2EA00A5DBFF /* Direction.swift */; };
+		8918C6B51DFBB2EA00A5DBFF /* SpawnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6B21DFBB2EA00A5DBFF /* SpawnerType.swift */; };
 		8918C6BD1DFBBE6800A5DBFF /* GameCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918C6BC1DFBBE6800A5DBFF /* GameCommand.swift */; };
+		89CAC7771DFC6F3E00F72A03 /* AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CAC7761DFC6F3E00F72A03 /* AnchorPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +72,10 @@
 		8918C6A71DFBB2B800A5DBFF /* SKNode+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extension.swift"; sourceTree = "<group>"; };
 		8918C6A81DFBB2B800A5DBFF /* SKPhysicsBody+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKPhysicsBody+Extension.swift"; sourceTree = "<group>"; };
 		8918C6A91DFBB2B800A5DBFF /* SKSpriteNode+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Extension.swift"; sourceTree = "<group>"; };
-		8918C6B01DFBB2EA00A5DBFF /* R2DAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R2DAnchorPoint.swift; sourceTree = "<group>"; };
-		8918C6B11DFBB2EA00A5DBFF /* R2DDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R2DDirection.swift; sourceTree = "<group>"; };
-		8918C6B21DFBB2EA00A5DBFF /* R2DSpawnerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R2DSpawnerType.swift; sourceTree = "<group>"; };
+		8918C6B11DFBB2EA00A5DBFF /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Direction.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8918C6B21DFBB2EA00A5DBFF /* SpawnerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnerType.swift; sourceTree = "<group>"; };
 		8918C6BC1DFBBE6800A5DBFF /* GameCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCommand.swift; sourceTree = "<group>"; };
+		89CAC7761DFC6F3E00F72A03 /* AnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +199,9 @@
 		8918C6AF1DFBB2DF00A5DBFF /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				8918C6B01DFBB2EA00A5DBFF /* R2DAnchorPoint.swift */,
-				8918C6B11DFBB2EA00A5DBFF /* R2DDirection.swift */,
-				8918C6B21DFBB2EA00A5DBFF /* R2DSpawnerType.swift */,
+				89CAC7761DFC6F3E00F72A03 /* AnchorPoint.swift */,
+				8918C6B11DFBB2EA00A5DBFF /* Direction.swift */,
+				8918C6B21DFBB2EA00A5DBFF /* SpawnerType.swift */,
 			);
 			name = Enum;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8918C6B41DFBB2EA00A5DBFF /* R2DDirection.swift in Sources */,
+				8918C6B41DFBB2EA00A5DBFF /* Direction.swift in Sources */,
 				8918C6BD1DFBBE6800A5DBFF /* GameCommand.swift in Sources */,
 				8918C6AA1DFBB2B800A5DBFF /* Int+Extension.swift in Sources */,
 				8918C6941DFB9EFB00A5DBFF /* CoordinateSpaceUtilities.swift in Sources */,
@@ -329,9 +329,9 @@
 				8918C6AC1DFBB2B800A5DBFF /* SKNode+Extension.swift in Sources */,
 				8918C69A1DFBA0B600A5DBFF /* Pool.swift in Sources */,
 				8918C6AB1DFBB2B800A5DBFF /* SKColor+Extension.swift in Sources */,
+				89CAC7771DFC6F3E00F72A03 /* AnchorPoint.swift in Sources */,
 				8918C6AD1DFBB2B800A5DBFF /* SKPhysicsBody+Extension.swift in Sources */,
-				8918C6B51DFBB2EA00A5DBFF /* R2DSpawnerType.swift in Sources */,
-				8918C6B31DFBB2EA00A5DBFF /* R2DAnchorPoint.swift in Sources */,
+				8918C6B51DFBB2EA00A5DBFF /* SpawnerType.swift in Sources */,
 				8918C6AE1DFBB2B800A5DBFF /* SKSpriteNode+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +540,7 @@
 				8918C6831DFB9CD800A5DBFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8918C6841DFB9CD800A5DBFF /* Build configuration list for PBXNativeTarget "SpritePopTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +549,7 @@
 				8918C6861DFB9CD800A5DBFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,15 +1,14 @@
 //
-//  R2DAnchorPoint.swift
-//  R2DEngine
+//  AnchorPoint.swift
+//  SpritePop
 //
-//  Created by Downey, Eric on 1/17/16.
 //  Copyright © 2016 Eric Downey. All rights reserved.
 //
 
 import Foundation
 
 /// Enum - Used to set Sprite Node anchor point
-public enum R2DAnchorPoint {
+public enum AnchorPoint {
     /// CGPoint - (x: 0.5, y: 0.5)
     case center
     /// CGPoint - (x: 0.0, y: 0.5)
@@ -31,7 +30,7 @@ public enum R2DAnchorPoint {
     /// CGPoint - CGPointZero
     case none
     
-    /// Get R2DAnchorPoint enum value as a CGPoint
+    /// Get AnchorPoint enum value as a CGPoint
     public var value: CGPoint {
         switch self {
         case .center: return CGPoint(x: 0.5, y: 0.5)
@@ -49,14 +48,14 @@ public enum R2DAnchorPoint {
     }
     
     /**
-     Returns an R2DAnchorPoint from a CGPoint. Returns R2DAnchorPoint.None if not a valid R2DAnchorPoint representation
+     Returns an AnchorPoint from a CGPoint. Returns AnchorPoint.None if not a valid AnchorPoint representation
      
-     - Parameter point: The CGPoint used to get the R2DAnchorPoint representation
+     - Parameter point: The CGPoint used to get the AnchorPoint representation
      
      - Returns: Self
      */
-    public static func fromCGPoint(_ point: CGPoint) -> R2DAnchorPoint {
-        switch point {
+    public static func from(cgPoint: CGPoint) -> AnchorPoint {
+        switch cgPoint {
         case CGPoint(x: 0.5, y: 0.5):
             return .center
         case CGPoint(x: 0.0, y: 0.5):
