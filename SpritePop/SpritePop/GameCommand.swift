@@ -2,11 +2,11 @@
 //  Command.swift
 //  SpritePop
 //
-//  Created by Downey, Eric on 12/9/16.
 //  Copyright © 2016 Downey. All rights reserved.
 //
 
+/// GameCommand protocol represents the Command pattern with an execute method
 public protocol GameCommand {
-    associatedtype T
-    func execute(with object: T)
+    associatedtype Actor: GameComponent
+    func execute(with actor: Actor)
 }
