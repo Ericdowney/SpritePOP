@@ -29,12 +29,12 @@ public extension JumpComponent where Self: SKNode {
 }
 
 public protocol MultiJumpComponent: JumpComponent {
-    var numberOfJumps: Int { get set }
+    var availableJumps: Int { get set }
 }
 
 public extension MultiJumpComponent where Self: SKNode {
     mutating func jump() {
-        if jumpCount < numberOfJumps {
+        if jumpCount < availableJumps {
             physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: impluse))
             jumpCount += 1
         }

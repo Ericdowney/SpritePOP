@@ -22,11 +22,11 @@ public extension ScrollingComponent {
         return direction.vector * speed
     }
     
-    var scrollAction: SKAction {
+    var action: SKAction {
         return SKAction.move(by: scrollDelta, duration: 1.0/60.0)
     }
     
-    var scrollForeverAction: SKAction {
+    var foreverAction: SKAction {
         return SKAction.repeatForever( action )
     }
 }
