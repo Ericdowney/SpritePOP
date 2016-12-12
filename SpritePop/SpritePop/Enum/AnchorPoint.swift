@@ -31,7 +31,7 @@ public enum AnchorPoint {
     case none
     
     /// Get AnchorPoint enum value as a CGPoint
-    public var value: CGPoint {
+    public var point: CGPoint {
         switch self {
         case .center: return CGPoint(x: 0.5, y: 0.5)
         case .left: return CGPoint(x: 0.0, y: 0.5)

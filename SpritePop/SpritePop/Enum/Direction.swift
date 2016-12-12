@@ -18,6 +18,8 @@ public enum Direction {
     case up
     /// CGVector - (dx: 0.0, dy: -1.0)
     case down
+    /// CGPoint - CGVector
+    case none
     
     /// Get Direction enum value as a CGVector
     public var vector: CGVector {
@@ -26,6 +28,22 @@ public enum Direction {
         case .right: return CGVector(dx: 1.0, dy: 0.0)
         case .up: return CGVector(dx: 0.0, dy: 1.0)
         case .down: return CGVector(dx: 0.0, dy: -1.0)
+        case .none: return CGVector(dx: 0.0, dy: 0.0)
+        }
+    }
+    
+    public static func from(vector: CGVector) -> Direction {
+        switch vector {
+        case CGVector(dx: -1.0, dy: 0.0):
+            return .left
+        case CGVector(dx: 1.0, dy: 0.0):
+            return .right
+        case CGVector(dx: 0.0, dy: 1.0):
+            return .up
+        case CGVector(dx: 0.0, dy: -1.0):
+            return .down
+        default:
+            return .none
         }
     }
     
