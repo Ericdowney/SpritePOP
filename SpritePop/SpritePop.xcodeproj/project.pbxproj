@@ -111,9 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				8918C68B1DFB9E8800A5DBFF /* Frameworks */,
+				8918C66E1DFB9CD800A5DBFF /* Products */,
 				8918C66F1DFB9CD800A5DBFF /* SpritePop */,
 				8918C67A1DFB9CD800A5DBFF /* SpritePopTests */,
-				8918C66E1DFB9CD800A5DBFF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,14 +129,14 @@
 		8918C66F1DFB9CD800A5DBFF /* SpritePop */ = {
 			isa = PBXGroup;
 			children = (
-				8918C6701DFB9CD800A5DBFF /* SpritePop.h */,
 				8918C6AF1DFBB2DF00A5DBFF /* Enum */,
-				8918C6A01DFBB24300A5DBFF /* Operators */,
 				8918C69F1DFBB23E00A5DBFF /* Extensions */,
-				8918C6921DFB9EE200A5DBFF /* Singletons */,
+				8918C6A01DFBB24300A5DBFF /* Operators */,
 				8918C6911DFB9EDA00A5DBFF /* Protocols */,
+				8918C6921DFB9EE200A5DBFF /* Singletons */,
 				8918C68F1DFB9ECD00A5DBFF /* Utilities */,
 				8918C6711DFB9CD800A5DBFF /* Info.plist */,
+				8918C6701DFB9CD800A5DBFF /* SpritePop.h */,
 			);
 			path = SpritePop;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 		8918C67A1DFB9CD800A5DBFF /* SpritePopTests */ = {
 			isa = PBXGroup;
 			children = (
-				8918C67B1DFB9CD800A5DBFF /* SpritePopTests.swift */,
 				8918C67D1DFB9CD800A5DBFF /* Info.plist */,
+				8918C67B1DFB9CD800A5DBFF /* SpritePopTests.swift */,
 			);
 			path = SpritePopTests;
 			sourceTree = "<group>";
@@ -165,19 +165,21 @@
 				8918C6931DFB9EFB00A5DBFF /* CoordinateSpaceUtilities.swift */,
 			);
 			name = Utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8918C6911DFB9EDA00A5DBFF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				89CAC7781DFDF9B400F72A03 /* BlinkComponent.swift */,
+				8918C6BC1DFBBE6800A5DBFF /* GameCommand.swift */,
 				89CAC7791DFDF9B400F72A03 /* GameComponent.swift */,
 				89CAC77A1DFDF9B400F72A03 /* JumpComponent.swift */,
-				89CAC77B1DFDF9B400F72A03 /* ScrollingComponent.swift */,
 				8918C6991DFBA0B600A5DBFF /* Pool.swift */,
-				8918C6BC1DFBBE6800A5DBFF /* GameCommand.swift */,
+				89CAC77B1DFDF9B400F72A03 /* ScrollingComponent.swift */,
 			);
 			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8918C6921DFB9EE200A5DBFF /* Singletons */ = {
@@ -185,6 +187,7 @@
 			children = (
 			);
 			name = Singletons;
+			path = Singletons;
 			sourceTree = "<group>";
 		};
 		8918C69F1DFBB23E00A5DBFF /* Extensions */ = {
@@ -197,6 +200,7 @@
 				8918C6A91DFBB2B800A5DBFF /* SKSpriteNode+Extension.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8918C6A01DFBB24300A5DBFF /* Operators */ = {
@@ -206,6 +210,7 @@
 				8918C6A31DFBB26500A5DBFF /* CGVector+Operators.swift */,
 			);
 			name = Operators;
+			path = Operators;
 			sourceTree = "<group>";
 		};
 		8918C6AF1DFBB2DF00A5DBFF /* Enum */ = {
@@ -216,6 +221,7 @@
 				8918C6B21DFBB2EA00A5DBFF /* SpawnerType.swift */,
 			);
 			name = Enum;
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
